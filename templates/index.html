@@ -11,17 +11,24 @@
   </head>
   <body>
     <div class='container'>
-    <h1 class='text-center mt-2 mb-4'>KayVeeZ Careers</h1><br>
+    <h1 class='text-center mt-2 mb-4'>{{company_name}} Careers</h1><br>
     <img id='banner' class='img-fluid' src = 'https://kayveezcarweb--kshitijvashisth.repl.co/static/banner.png'>
     <h2 class='text-center mt-2 mb-4'>About KayVeeZ</h2>
     <p class='lead'>
       <font>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sagittis nisl rhoncus mattis rhoncus urna. Quis vel eros donec ac odio tempor orci. Vitae proin sagittis nisl rhoncus mattis rhoncus urna neque viverra. Duis tristique sollicitudin nibh sit amet. Proin fermentum leo vel orci porta non. Imperdiet massa tincidunt nunc pulvinar sapien. Massa tempor nec feugiat nisl pretium. Aliquet sagittis id consectetur purus ut faucibus pulvinar elementum. Sem nulla pharetra diam sit amet nisl suscipit adipiscing bibendum. Vitae auctor eu augue ut lectus arcu bibendum. Pellentesque diam volutpat commodo sed egestas egestas. Morbi tristique senectus et netus et malesuada fames. Eget sit amet tellus cras. Nec tincidunt praesent semper feugiat nibh sed. Amet luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor. Neque sodales ut etiam sit amet nisl purus in. Maecenas pharetra convallis posuere morbi leo urna molestie at. Sit amet luctus venenatis lectus magna fringilla urna porttitor. Ipsum dolor sit amet consectetur adipiscing elit ut aliquam purus.</font>
     </p>
     <h2 class='text-center mt-2 mb-4'>Open positions</h2>
-    <p>TODO - show the jobs here</p>
+    
+      <div>
+      {%for job in jobs%}
+        {%include 'jobitem.html' %}
+      {%endfor%}
+      </div>
+    
     </div>
     <div style='text-align: center;'>
     <button class='btn btn-outline-primary'>Contact Us!</button>
+    <p class ='mt-2 mb-4'><a href='about'>About Us</a></p>
     <p class='mt-4'>Copyright 2023, KayVeeZ</p>
     </div>
   </body>
