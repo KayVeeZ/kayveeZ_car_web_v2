@@ -1,6 +1,12 @@
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    </head>
+    <body>
 <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm fixed-top bg-white" data-bs-theme="dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="/">
       <img src="/static/logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
       KayVeeZ
     </a>
@@ -40,3 +46,22 @@
   </div>
 </nav>
 <div style='height:56px;'></div>
+      <script> 
+            $(document).ready(function(){ 
+              $(".navbar-nav a").click(function(){ 
+                $(".navbar-nav").find(".active").removeClass("active");       
+                  $(this).parent().addClass("active"); 
+              }); 
+            }); 
+          </script>
+          <script>
+              $(document).ready(function(){
+                  $(".dropdown").hover(function(){
+                      $('.dropdown-menu', this).stop(true, true).slideDown("fast");
+                      $(this).toggleClass('active');        
+                  }, function(){
+                      $('.dropdown-menu', this).stop(true, true).slideUp("fast");
+                      $(this).toggleClass('active');       
+                  });
+              });
+          </script>
