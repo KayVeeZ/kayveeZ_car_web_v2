@@ -6,7 +6,7 @@
     <body>
 <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm fixed-top bg-white" data-bs-theme="dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="/">
+    <a class="navbar-brand" href="{{url_for('hello')}}">
       <img src="/static/logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
       KayVeeZ
     </a>
@@ -27,7 +27,7 @@
             Dropdown
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="about">About Us</a></li>
+            <li><a class="dropdown-item" href="{{url_for('about')}}">About Us</a></li>
             <li><a class="dropdown-item" href="#">Another action</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Something else here</a></li>
