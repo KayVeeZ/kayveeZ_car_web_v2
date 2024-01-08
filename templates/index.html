@@ -1,9 +1,12 @@
 {% extends 'base.html' %}
 
 {% block content %}
-     <h1 class='text-center mt-2 mb-4'>{{company_name}} Careers</h1><br>
-    <img id='banner' class='img-fluid' src = '/static/banner.png'>
-    <h2 class='text-center mt-2 mb-4'>About KayVeeZ</h2>
+<head><title>KayVeeZ Careers</title></head>
+  <div class = "container">   
+    {% include 'banner.html' %}
+    {% include 'company_name.html' %}
+    <h2 class='text-center mb-4'>About KayVeeZ</h2>
+    <hr class='mt-0 mb-4' style="width:20%; margin: 0 40% 0 40%;border: none;height: 4px;background-color: #000000;">
     <div class='row' style='margin-bottom:16px;'>
       <div class='col-md-6'>
       <p class='lead'>
@@ -13,17 +16,19 @@
     <div class='d-none d-md-block col-md-6'>
     <img src='/static/bg.avif'style='height:500px;width:600px;border-radius:4px;'>
     </div>
-  </div>  
+  </div>
+  
     <h2 class='text-center mt-2 mb-4'>Open positions</h2>
+    <hr class='mt-0 mb-4' style="width:20%; margin: 0 40% 0 40%;border: none;height: 4px;background-color: #000000;">
     
       <div>
       {%for job in jobs%}
         {%include 'jobitem.html' %}
       {%endfor%}
       </div>
-    
     </div>
-    <div style='text-align: center;'>
+    </div>
+    
  
 {% endblock %}
       
