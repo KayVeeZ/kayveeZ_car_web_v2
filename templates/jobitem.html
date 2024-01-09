@@ -1,13 +1,13 @@
 <div style='margin-bottom: 16px; padding-bottom: 8px;' class='border-bottom row'>
 <div class = 'col-9'>
-  <h4 style='color:rgb(120,120,120);margin-bottom: 4px'>{{job['title']}}</h4>
+  <h4 style='color:rgb(120,120,120);margin-bottom: 4px'><font style="font-family: Broadway;-webkit-text-stroke: 1px #0d6efd;">{{job['title']}}</font></h4>
 
 <div>
-<b>Location: {{job['location']}}</b>
+<b>Location:</b> {{job['location']}}
 </div>
   {%if 'salary' in job%}
   <div>
-  <b>Salary: {{job['currency']}}{{job['salary']}}</b>
+  <b>Salary:</b> {{job['currency']}}{{job['salary']}}
   </div>
   {%endif%}
 </div>
