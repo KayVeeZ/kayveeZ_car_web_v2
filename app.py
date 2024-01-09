@@ -7,11 +7,11 @@ app = Flask(__name__)
 @app.route('/')
 def hello():
   jobs_list = load_jobs_from_db()
-  return render_template('index.html', jobs = jobs_list)
+  return render_template('index.html', jobs = jobs_list, company_name = 'KayVeeZ')
 
 @app.route('/about')
 def about():
-  return render_template('about.html')
+  return render_template('about.html', portal_name = 'KayVeeZ Careers')
 
 @app.route('/api/jobs')
 def jobs():

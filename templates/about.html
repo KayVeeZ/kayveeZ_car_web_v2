@@ -1,8 +1,33 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<body style='background-color: green;'>
+
   
- <div style='margin: 0 auto 0 auto;width: 20%;'><h1 style='color: red; text-align: center; background-color: yellow;'>Under Construction</h1></div>
+ <div class ='content'>
+   {% include 'banner.html' %}
+   <h2 class='text-center mt-4 mb-4'>About <font style="font-family: Broadway;-webkit-text-stroke: 1px red;">KayVeeZ</font></h2>
+   <hr class='mt-0 mb-4' style="width:20%; margin: 0 40% 0 40%;border: none;height: 4px;background-color: red;">
+   <div class='lead' style="text-align: justify; text-justify: inter-word;">
+     <p>
+     <font>Welcome to {{portal_name}}, your premier destination for connecting top-tier tech talent with cutting-edge companies. At {{portal_name}}, we understand that in the fast-paced world of technology, finding the right talent is crucial for success. That's why we've created a platform that streamlines the hiring process, making it easier than ever for tech professionals and companies to find their perfect match.Founded with a vision to bridge the gap between talent and opportunity, {{portal_name}} is committed to revolutionizing the way tech hiring is done. Our platform is designed to empower both job seekers and employers, providing a seamless and efficient experience for everyone involved.<br>
+
+    <u>For Job Seekers:</u><br>
+     At {{portal_name}}, we recognize the unique skills and expertise that tech professionals bring to the table. Our platform is dedicated to helping you discover exciting career opportunities that align with your passion and expertise. Whether you're a seasoned developer, a data scientist, or an aspiring tech enthusiast, {{portal_name}} is your gateway to a world of possibilities.<br>
+
+       <u>For Employers:</u><br>
+     Finding the right talent is the key to building a successful tech team. {{portal_name}} offers a comprehensive suite of tools and resources to simplify the hiring process. From posting job opportunities to accessing a pool of highly skilled candidates, our platform is designed to help you find the perfect match for your company's unique needs.<br>
+
+       <u>Why Choose {{portal_name}}?</u><br>
+<ol>
+         <li><b>Diverse Talent Pool:</b> Our platform attracts a diverse range of tech professionals, ensuring that you have access to a wide variety of skills and experiences.</li>
+  <li><b>Efficiency and Speed:</b> We understand the importance of time in the tech industry. {{portal_name}} is designed to accelerate the hiring process, connecting companies with qualified candidates quickly and efficiently.</li>
+  <li><b>Innovative Matching Technology:</b> Our advanced matching algorithms use cutting-edge technology to pair the right talent with the right opportunities, ensuring compatibility and success for both parties.</li>
+  <li><b>Community and Support:</b> {{portal_name}} is more than just a hiring platform; it's a community of tech enthusiasts, professionals, and forward-thinking companies. We provide support and resources to help you thrive in the ever-evolving tech landscape.</li>
+  </ol>
+     Join {{portal_name}} today and experience a new era of tech hiring. Whether you're looking for your dream job or the perfect candidate, we're here to make the process seamless, efficient, and enjoyable. Welcome to the future of tech talent acquisition with {{portal_name}}.</font>
+   </p>
+     </div>
+   
+ </div>
   
 {% endblock %}
