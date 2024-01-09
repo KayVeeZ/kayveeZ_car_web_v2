@@ -2,12 +2,14 @@
 <html>
   <head>
     {%include 'bootstrap.html' %}
-    <!-- {%include 'sidebar.html' %} -->
+    
   </head>
   <body>
+    {%include 'sidebar.html' %}
     {%include 'nav.html'%}
-    <div class='container'>
+    <div class='content' style="width:81%;margin-left: auto; margin-right: 8px;">
       {% block content %}
+      
       {% endblock %}
     </div>
     {%include 'footer.html'%}
