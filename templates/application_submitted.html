@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+<head><title>Application Submitted</title></head>
+<body>
+  <div class='container'>
+    <p class='lead mt-4'><b>Your Application for the role of </b><font style="font-family: Broadway;-webkit-text-stroke: 1px darkblue;">{{job['title']}}</font> <b>at KayVeeZ has been submitted.</b></p>
+    <h4><font style="font-family: Broadway;-webkit-text-stroke: 1px purple;">Full Name</font></h4>
+    <div class='mb-4'>{{application['full_name']}}</div>
+  
+    <h4><font style="font-family: Broadway;-webkit-text-stroke: 1px purple;">Email Address</font></h4>
+    <div class='mb-4'>{{application['email']}}</div>
+  
+    <h4><font style="font-family: Broadway;-webkit-text-stroke: 1px purple;">LinkedIn Profile</font></h4>
+    <div class='mb-4'>{{application['linkedin_url']}}</div>
+  
+    <h4><font style="font-family: Broadway;-webkit-text-stroke: 1px purple;">Education</font></h4>
+    <div class='mb-4'>{{application['education']}}</div>
+  
+    <h4><font style="font-family: Broadway;-webkit-text-stroke: 1px purple;">Work Experience</font></h4>
+    <div class='mb-4'>{{application['work_experience']}}</div>
+    
+    <h4><font style="font-family: Broadway;-webkit-text-stroke: 1px purple;">Resume URL</font></h4>
+    <div class='mb-4'>{{application['resume_url']}}</div>
+    </div>
+</body>
+{% endblock %}

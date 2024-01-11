@@ -5,8 +5,7 @@
   </head>
   <body>
     
-    {% include 'banner.html' %}
-    {% include 'company_name.html' %}
+    <div class ="container">
     <h3 class='mt-2 mb-2'><font style="font-family: Broadway;-webkit-text-stroke: 1px darkorange;">{{job.title}}</font></h3>
     <p class="lead mt-0">{{job.location}}</p>
     <h3><font style="font-family: Broadway;-webkit-text-stroke: 1px darkorange;">Salary</font></h3>
@@ -23,6 +22,7 @@
       <li>{{line}}</li>
       {% endfor %}
     </ol>
-    {% endblock %}
+      {% include 'application_form.html'%}
+    </div>
   </body>
-</html>
+{% endblock %}
